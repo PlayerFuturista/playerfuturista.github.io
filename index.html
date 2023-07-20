@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLandia - Cuidados de Animais Exóticos</title>
+    <!-- Adicione o link para o arquivo CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicione o arquivo de estilo personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">PetLandia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de curiosidades -->
+    <div id="curiositiesCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#curiositiesCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#curiositiesCarousel" data-slide-to="1"></li>
+            <!-- Adicione mais indicadores conforme o número de curiosidades -->
+        </ol>
+        <div class="carousel-inner">
+            <!-- Curiosidade 1: Furões -->
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x400" alt="Furão" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Curiosidade sobre Furões</h3>
+                    <p>Os furões são animais curiosos e inteligentes. Eles possuem uma grande agilidade e são excelentes caçadores.</p>
+                </div>
+            </div>
+
+            <!-- Adicione mais curiosidades sobre outras espécies de animais exóticos -->
+        </div>
+        <a class="carousel-control-prev" href="#curiositiesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#curiositiesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Seção sobre nós -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Nós</h2>
+                    <p>Desde 2010, a PetLandia compartilha informações sobre cuidados de animais exóticos e curiosidades fascinantes sobre esses seres incríveis. Nosso objetivo é promover o bem-estar e a conscientização sobre a importância de tratar esses animais com amor e respeito.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" alt="Imagem sobre nós" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Entre em Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            &copy; 2023 PetLandia. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
